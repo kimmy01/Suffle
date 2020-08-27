@@ -4,20 +4,22 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!--파일 쓰기 권한-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!--파일 읽기 권한-->
-    <uses-permission android:name="android.permission.CAMERA"/> <!--카메라 권한 -->
-    <uses-feature android:name="android.hardware.camera" android:required="true"/> <!-- 카메라 기능 사용 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 파일 쓰기 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 파일 읽기 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 권한 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_badge"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Feed.WritingReviewActivity3"></activity>
+        <activity android:name=".ui.Mypage.MyListActivity"></activity>
+        <activity android:name=".ui.Feed.WritingReviewActivity3" />
         <activity android:name=".ui.Feed.WritingReviewActivity2" />
         <activity android:name=".ui.Feed.WritingReviewActivity1" />
         <activity android:name=".ui.Map.CreateFriendActivity" />
@@ -35,15 +37,14 @@
             android:value="3fd6292eab6c1301ddea66289eeefe23" />
 
         <provider
-            android:authorities="com.example.suffle.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.suffle.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
-
         </provider>
-
     </application>
 
 </manifest>

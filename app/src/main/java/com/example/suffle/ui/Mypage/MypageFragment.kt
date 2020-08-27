@@ -2,6 +2,7 @@
 
 package com.example.suffle.ui.Mypage
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.suffle.R
 import com.example.suffle.data.MyPageData
+import com.example.suffle.ui.Feed.WritingReviewActivity1
+import kotlinx.android.synthetic.main.fragment_feed.*
 import kotlinx.android.synthetic.main.fragment_mypage_content.*
 
 class MypageFragment : Fragment() {
@@ -60,6 +63,14 @@ class MypageFragment : Fragment() {
 
         mypageAdpater.datas = myPageData
         mypageAdpater.notifyDataSetChanged()
+
+
+        button_mypage_mylist.setOnClickListener {
+            activity?.let{
+                val intent = Intent(context, MyListActivity::class.java)
+                startActivity(intent)
+            }
+        }
 
     }
 
