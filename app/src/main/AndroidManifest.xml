@@ -18,7 +18,8 @@
         android:roundIcon="@drawable/ic_badge"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Mypage.MyListActivity"></activity>
+        <activity android:name=".ui.Feed.DetailReviewActivity"></activity>
+        <activity android:name=".ui.Mypage.MyListActivity" />
         <activity android:name=".ui.Feed.WritingReviewActivity3" />
         <activity android:name=".ui.Feed.WritingReviewActivity2" />
         <activity android:name=".ui.Feed.WritingReviewActivity1" />

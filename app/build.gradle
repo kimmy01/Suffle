@@ -63,4 +63,7 @@ dependencies {
     //camera
     implementation 'gun0912.ted:tedpermission:2.2.3'
 
+    //ratingbar
+    implementation 'com.hedgehog.ratingbar:app:1.1.2'
+
 }

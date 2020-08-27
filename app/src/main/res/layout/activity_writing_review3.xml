@@ -159,7 +159,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_6"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="46.7dp"
             android:background="@drawable/hashtag_button"
@@ -175,7 +175,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_7"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.4dp"
             android:layout_marginTop="46.7dp"
             android:background="@drawable/hashtag_button"
@@ -191,7 +191,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_8"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="46.7dp"
             android:background="@drawable/hashtag_button_selected"
@@ -207,7 +207,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_9"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="46.7dp"
             android:background="@drawable/hashtag_button"
@@ -223,7 +223,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_10"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="83.9dp"
             android:background="@drawable/hashtag_button"
@@ -239,7 +239,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_11"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="83.9dp"
             android:background="@drawable/hashtag_button_selected"
@@ -255,7 +255,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_12"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="83.9dp"
             android:background="@drawable/hashtag_button"
@@ -271,7 +271,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_13"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="121dp"
             android:background="@drawable/hashtag_button"
@@ -287,7 +287,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_14"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="121dp"
             android:background="@drawable/hashtag_button_selected"
@@ -303,7 +303,7 @@
         <TextView
             android:id="@+id/textView_writingReview3_15"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10.5dp"
             android:layout_marginTop="121dp"
             android:background="@drawable/hashtag_button"

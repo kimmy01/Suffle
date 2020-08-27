@@ -7,6 +7,8 @@
     <style name="customRatingBar" parent="android:Widget.RatingBar">
         <item name="colorControlNormal">#707070</item>
         <item name="colorControlActivated">#ed7d5d</item>
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">15dp</item>
     </style>
 
     <style name="dialogLayout" parent="Theme.AppCompat">

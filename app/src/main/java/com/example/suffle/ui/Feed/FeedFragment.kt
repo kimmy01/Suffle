@@ -54,7 +54,7 @@ class FeedFragment : Fragment() {
             object : ExampleAdapter.ExampleViewHolder.onClickListener {
                 override fun onClickItem(position: Int) {
                     activity?.let{
-                        val intent = Intent(context, MyListActivity::class.java)
+                        val intent = Intent(context, DetailReviewActivity::class.java)
                         startActivity(intent)
                     }
                 }
