@@ -1,5 +1,8 @@
+@file:Suppress("UNREACHABLE_CODE")
+
 package com.example.suffle.ui.Feed
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +13,7 @@ import com.example.suffle.R
 import com.example.suffle.data.ExampleList
 import com.example.suffle.data.ExampleSubList
 import kotlinx.android.synthetic.main.fragment_feed.*
+import kotlinx.android.synthetic.main.fragment_mypage_content.*
 
 class FeedFragment : Fragment() {
 
@@ -54,6 +58,14 @@ class FeedFragment : Fragment() {
         recyclerview_example.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
         //exampleAdapter.exampleList = example
+
+        floatingButton_feed.setOnClickListener {
+            activity?.let{
+                val intent = Intent(context, WritingReviewActivity1::class.java)
+                startActivity(intent)
+            }
+        }
+
     }
 
 

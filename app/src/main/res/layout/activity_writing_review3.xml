@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Feed.WritingReviewActivity3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_writingReview3_1"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView_writingReview3_before"
+            android:layout_width="16.3dp"
+            android:layout_height="16.3dp"
+            android:layout_marginStart="14.4dp"
+            android:layout_marginTop="42.7dp"
+            android:src="@drawable/before"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39.8dp"
+            android:text="리뷰 작성"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="14dp"
+            android:clickable="true"
+            android:text="등록"
+            android:textColor="@color/faded_orange"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Divider"
+        android:layout_marginTop="78dp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_writingReview3_1"
+        tools:ignore="MissingConstraints"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_writingReview3_2"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_writingReview3_1">
+
+        <ImageView
+            android:id="@+id/imageView_writingReview3_image"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/image1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_writingReview3_flag"
+            android:layout_width="11dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="51dp"
+            android:src="@drawable/iconflag"
+            app:layout_constraintStart_toEndOf="@+id/imageView_writingReview3_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="48.2dp"
+            android:text="place"
+            app:layout_constraintStart_toEndOf="@+id/imageView_writingReview3_flag"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="9.8dp"
+            android:text="분위기가 너무 이쁜 카페였다:)"
+            android:textColor="@color/brownish_grey"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView_writingReview3_image"
+            app:layout_constraintTop_toBottomOf="@+id/textView_writingReview3_3" />
+
+        <ImageView
+            android:id="@+id/imageView_writingReview3_recommend"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view4"
+        style="@style/Divider"
+        android:layout_marginTop="137dp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_writingReview3_2"
+        tools:ignore="MissingConstraints"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_writingReview3_3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4">
+
+        <TextView
+            android:id="@+id/textView_writingReview3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19.7dp"
+            android:lineSpacingExtra="6sp"
+            android:text="옵션을 추천해주세요!"
+            android:textStyle="bold"
+            android:textColor="@color/brownish_grey"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_6"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46.7dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="조용한"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_7"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.4dp"
+            android:layout_marginTop="46.7dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="떠들기 좋은"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@id/textView_writingReview3_6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_8"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="46.7dp"
+            android:background="@drawable/hashtag_button_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="공부하기 좋은"
+            android:textColor="@color/faded_orange"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@id/textView_writingReview3_7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_9"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="46.7dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="회의하기 좋은"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@id/textView_writingReview3_8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_10"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="83.9dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="베이커리 맛집"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_11"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="83.9dp"
+            android:background="@drawable/hashtag_button_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="디저트 종류가 다양한"
+            android:textColor="@color/faded_orange"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_writingReview3_10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_12"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="83.9dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="음료 종류가 다양한"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_writingReview3_11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_13"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="121dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="사진이 잘 나오는"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_14"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="121dp"
+            android:background="@drawable/hashtag_button_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="인스타에서 핫한"
+            android:textColor="@color/faded_orange"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_writingReview3_13"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_15"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="10.5dp"
+            android:layout_marginTop="121dp"
+            android:background="@drawable/hashtag_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="24시간 영업"
+            android:textColor="@color/brownish_grey"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_writingReview3_14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_writingReview3_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/brownish_grey"
+            android:lineSpacingExtra="6sp"
+            android:text="다중 선택 가능"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="157.7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView_writingReview3_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/brownish_grey"
+            android:lineSpacingExtra="6sp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="페이스북 스토리에 공유"
+            android:layout_marginTop="310.7dp"
+            android:layout_marginStart="142dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView_writingReview3_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/brownish_grey"
+            android:lineSpacingExtra="6sp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="인스타그램 스토리에 공유"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="142dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_writingReview3_facebook"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

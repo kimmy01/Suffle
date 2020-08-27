@@ -5,6 +5,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!--파일 쓰기 권한-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!--파일 읽기 권한-->
+    <uses-permission android:name="android.permission.CAMERA"/> <!--카메라 권한 -->
+    <uses-feature android:name="android.hardware.camera" android:required="true"/> <!-- 카메라 기능 사용 -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Map.CreateFriendActivity"></activity>
+        <activity android:name=".ui.Feed.WritingReviewActivity3"></activity>
+        <activity android:name=".ui.Feed.WritingReviewActivity2" />
+        <activity android:name=".ui.Feed.WritingReviewActivity1" />
+        <activity android:name=".ui.Map.CreateFriendActivity" />
         <activity android:name=".ui.Map.CreateGroupActivity" />
         <activity android:name=".ui.bottomTab.MainActivity">
             <intent-filter>
@@ -25,6 +33,17 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="3fd6292eab6c1301ddea66289eeefe23" />
+
+        <provider
+            android:authorities="com.example.suffle.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
     </application>
 
 </manifest>

@@ -11,13 +11,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.suffle.R
 import com.example.suffle.data.MyPageData
-import com.example.suffle.data.PlaceData
-import com.example.suffle.ui.Feed.MypageGridAdapter
-import com.example.suffle.ui.Feed.MypageGridViewHolder
-import com.example.suffle.ui.Home.PlaceGridAdapter
-import com.example.suffle.ui.Home.PlaceGridViewHolder
-import com.example.suffle.ui.Home.RecommandAdapter
-import kotlinx.android.synthetic.main.fragment_home_content.*
 import kotlinx.android.synthetic.main.fragment_mypage_content.*
 
 class MypageFragment : Fragment() {
@@ -26,13 +19,20 @@ class MypageFragment : Fragment() {
     lateinit var mypageAdpater: MypageGridAdapter
 
     val myPageData = arrayListOf<MyPageData>(
-    MyPageData(R.drawable.image4),
-    MyPageData(R.drawable.image5),
-    MyPageData(R.drawable.image6),
-    MyPageData(R.drawable.image7),
-    MyPageData(R.drawable.image8),
-    MyPageData(R.drawable.image9),
-    MyPageData(R.drawable.image10)
+        MyPageData(R.drawable.image4),
+        MyPageData(R.drawable.image5),
+        MyPageData(R.drawable.image6),
+        MyPageData(R.drawable.image7),
+        MyPageData(R.drawable.image8),
+        MyPageData(R.drawable.image9),
+        MyPageData(R.drawable.image10),
+        MyPageData(R.drawable.image4),
+        MyPageData(R.drawable.image5),
+        MyPageData(R.drawable.image6),
+        MyPageData(R.drawable.image7),
+        MyPageData(R.drawable.image8),
+        MyPageData(R.drawable.image9),
+        MyPageData(R.drawable.image10)
     )
 
     override fun onCreateView(
@@ -46,12 +46,14 @@ class MypageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        mypageAdpater = MypageGridAdapter(view.context,
-            object : MypageGridViewHolder.onClickListener {
-                override fun onClickItem(position: Int) {
-                    Toast.makeText(context, position.toString(), Toast.LENGTH_SHORT).show()
-                }
-            })
+        mypageAdpater =
+            MypageGridAdapter(view.context,
+                object :
+                    MypageGridViewHolder.onClickListener {
+                    override fun onClickItem(position: Int) {
+                        Toast.makeText(context, position.toString(), Toast.LENGTH_SHORT).show()
+                    }
+                })
 
         recyclerView_mypage.layoutManager = GridLayoutManager(context, 3, GridLayoutManager.VERTICAL, false)
         recyclerView_mypage.adapter = mypageAdpater

@@ -55,4 +55,12 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:1.0.6@aar'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
+    //searchview
+    implementation 'com.github.mancj:MaterialSearchBar:0.7.1'
+
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //camera
+    implementation 'gun0912.ted:tedpermission:2.2.3'
+
 }

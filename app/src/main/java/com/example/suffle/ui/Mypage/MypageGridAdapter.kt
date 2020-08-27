@@ -1,4 +1,4 @@
-package com.example.suffle.ui.Feed
+package com.example.suffle.ui.Mypage
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -11,14 +11,18 @@ import com.example.suffle.R
 import com.example.suffle.data.MyPageData
 
 class MypageGridAdapter (private val context: Context,
-                         private val clickListener: MypageGridViewHolder.onClickListener): RecyclerView.Adapter<MypageGridViewHolder>(){
+                         private val clickListener: MypageGridViewHolder.onClickListener
+): RecyclerView.Adapter<MypageGridViewHolder>(){
 
     var datas = arrayListOf<MyPageData>()
     var previousPosition = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MypageGridViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_frag_grid_mypage, parent, false)
-        return MypageGridViewHolder(view, clickListener)
+        return MypageGridViewHolder(
+            view,
+            clickListener
+        )
     }
 
     override fun getItemCount(): Int {

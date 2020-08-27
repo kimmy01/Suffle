@@ -54,6 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout_example_1"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton_feed"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:backgroundTint="@color/faded_orange"
